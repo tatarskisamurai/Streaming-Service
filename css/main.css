@@ -22,10 +22,10 @@ body{
   font-style: normal;
 }
 
-.inter-SemiBold {
+.inter-Medium {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 600;
+  font-weight: 500;
   font-style: normal;
 }
 
@@ -42,3 +42,14 @@ body{
   font-weight: 700;
   font-style: normal;
 }
+
+.btn {
+    background-color: #EC3343;
+    height: 52px;
+    border: none;
+    cursor: pointer;
+    color: #FFFFFF;
+    font-size: 20px;
+    border-radius: 5px;
+}
+

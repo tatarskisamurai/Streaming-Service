@@ -1,0 +1,15 @@
+<svg viewBox="0 0 1119 572.336" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1119.000000" height="572.335938" fill="none" customFrame="#000000">
+	<defs>
+		<filter id="pixso_custom_mask_type_alpha">
+			<feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0 " />
+		</filter>
+	</defs>
+	<mask id="mask_0" width="1119.000000" height="567.771179" x="0.000000" y="0.000000" maskUnits="userSpaceOnUse">
+		<g filter="url(#pixso_custom_mask_type_alpha)">
+			<path id="Mask" d="M0 561.776L0 15.1532C0 8.10328 7.1053 3.2538 13.7388 5.64074C129.749 47.3848 330.582 74.98 558.899 74.98C787.988 74.98 989.406 47.1979 1105.23 5.21695C1111.87 2.81059 1119 7.66115 1119 14.7231L1119 562.206C1119 569.268 1111.87 574.118 1105.23 571.712C989.406 529.731 787.988 501.949 558.899 501.949C330.582 501.949 129.749 529.544 13.7388 571.288C7.10531 573.675 0 568.826 0 561.776Z" fill="rgb(217,217,217)" fill-rule="evenodd" />
+		</g>
+	</mask>
+	<g id="Background Image" mask="url(#mask_0)">
+		<rect id="Image" width="1119.000000" height="578.359558" x="0.000000" y="-10.382080" fill="rgb(196,196,196)" />
+	</g>
+</svg>

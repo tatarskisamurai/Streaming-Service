@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,13 +8,17 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/slaider.css">
 </head>
+
 <body>
     <header>
         <div class="container">
@@ -33,10 +38,33 @@
                         <img src="icons/searchButton.svg" alt="searchButton">
                     </button>
                     <button class="login inter-Regular">Login</button>
-                    <button class="signup inter-Bold">Sign Up</button>
+                    <button class="btn signup inter-Bold">Sign Up</button>
                 </div>
             </div>
         </div>
+
+        <div class="carousel_container">
+        <div class="carousel-viewport">
+            <div class="carousel" id="carouselTrack">
+                <!-- Слайды будут динамически загружены -->
+            </div>
+        </div>
+
+        <div class="slaiderBtn prevButton" id="prevBtn">
+            <img src="icons/arrow.svg" alt="arrow">
+        </div>
+        <div class="slaiderBtn nextButton" id="nextBtn">
+            <img src="icons/arrow.svg" alt="arrow">
+        </div>
+
+        <div class="indicators" id="indicators"></div>
+    </div>
+
+
+
     </header>
+
+    <script type="module" src="js/slaider.js"></script>
 </body>
+
 </html>
