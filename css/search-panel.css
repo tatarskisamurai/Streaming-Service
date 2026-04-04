@@ -1,0 +1,154 @@
+.search-panel {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 34px;
+    margin-top: 52px;
+    max-width: 100%;
+}
+
+.search-input-wrapper {
+    width: 312px;
+    height: 52px;
+    background: transparent;
+    border: 1px solid #3D3D3D;
+    border-radius: 10px;
+    padding: 0 18px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+.search-icon {
+    width: 20px;
+    height: 20px;
+    opacity: 0.7;
+    flex-shrink: 0;
+}
+
+.search-input {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #D1D1D1;
+    font-size: 16px;
+    width: 100%;
+    min-width: 0;
+}
+
+.search-input::placeholder {
+    color: #D1D1D1;
+}
+
+.dropdown-wrapper {
+    position: relative;
+    height: 52px;
+    flex-shrink: 0;
+}
+
+.dropdown-genre {
+    width: 176px;
+    min-width: 176px;
+    max-width: 176px;
+}
+
+.dropdown-channel {
+    width: 192px;
+    min-width: 192px;
+    max-width: 192px;
+}
+
+.dropdown-subtitle {
+    width: 175px;
+    min-width: 175px;
+    max-width: 175px;
+}
+
+.styled-select {
+    width: 100%;
+    min-width: 0;
+    height: 52px;
+    background: transparent;
+    border: 1px solid #3D3D3D;
+    border-radius: 10px;
+    padding: 0 48px 0 18px;
+    color: #D1D1D1;
+    font-size: 16px;
+    appearance: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+    display: block;
+}
+
+.styled-select:focus {
+    outline: none;
+    border-color: #FF4D6D;
+}
+
+.styled-select option {
+    background: #0a0c10;
+    color: #D1D1D1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.styled-select::-ms-expand {
+    display: none;
+}
+
+.dropdown-arrow {
+    position: absolute;
+    right: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+    pointer-events: none;
+}
+
+.search-now-btn {
+    width: 203px;
+    border-radius: 10px;
+}
+
+.search-now-btn:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+}
+
+.inter-Regular {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+
+.inter-Bold {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
+
+@media (max-width: 1100px) {
+    .search-panel {
+        gap: 20px;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 900px) {
+    .search-panel {
+        flex-direction: column;
+        gap: 16px;
+        margin-top: 32px;
+    }
+    
+    .search-input-wrapper,
+    .dropdown-wrapper,
+    .search-now-btn {
+        width: 100% !important;
+        min-width: auto !important;
+        max-width: none !important;
+        flex-shrink: 1;
+    }
+}

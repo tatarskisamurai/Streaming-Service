@@ -1,0 +1,21 @@
+.stats-grid {
+    display: flex;
+    justify-content: center;
+    gap: 42px;
+}
+
+.stat-number {
+    color: #FFFFFF;
+    font-size: 46px;
+    text-align: center;
+}
+
+.stat-label {
+    margin-top: 14px;
+    color: #FFFFFF;
+    font-size: 24px;
+}
+
+.stat-number span {
+    color: #EC3343;
+}

@@ -1,11 +1,11 @@
-body{
-    background-color: #000000;
+body {
+  background-color: #000000;
 }
 
 .container {
-    max-width: 90%;
-    width: 1400px;
-    margin: 0 auto;
+  max-width: 90%;
+  width: 1400px;
+  margin: 0 auto;
 }
 
 .inter-Thin {
@@ -44,12 +44,19 @@ body{
 }
 
 .btn {
-    background-color: #EC3343;
-    height: 52px;
-    border: none;
-    cursor: pointer;
-    color: #FFFFFF;
-    font-size: 20px;
-    border-radius: 5px;
+  background-color: #EC3343;
+  height: 52px;
+  border: none;
+  cursor: pointer;
+  color: #FFFFFF;
+  font-size: 20px;
+  border-radius: 10px;
 }
 
+.hero-title {
+  margin-top: 73px;
+  font-size: 72px;
+  color: #EC3343;
+  text-align: center;
+  line-height: 1.1;
+}

@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/slaider.css">
+    <link rel="stylesheet" href="css/stats.css">
+    <link rel="stylesheet" href="css/search-panel.css">
 </head>
 
 <body>
@@ -44,21 +46,119 @@
         </div>
 
         <div class="carousel_container">
-        <div class="carousel-viewport">
-            <div class="carousel" id="carouselTrack">
-                <!-- Слайды будут динамически загружены -->
+            <div class="carousel-viewport">
+                <div class="carousel" id="carouselTrack">
+                    <!-- Слайды будут динамически загружены -->
+                </div>
             </div>
+
+            <div class="slaiderBtn prevButton" id="prevBtn">
+                <img src="icons/arrow.svg" alt="arrow">
+            </div>
+            <div class="slaiderBtn nextButton" id="nextBtn">
+                <img src="icons/arrow.svg" alt="arrow">
+            </div>
+
+            <div class="indicators" id="indicators"></div>
+
         </div>
 
-        <div class="slaiderBtn prevButton" id="prevBtn">
-            <img src="icons/arrow.svg" alt="arrow">
-        </div>
-        <div class="slaiderBtn nextButton" id="nextBtn">
-            <img src="icons/arrow.svg" alt="arrow">
-        </div>
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number inter-Regular">10K <span>+</span></div>
+                    <div class="stat-label inter-Medium">Daily Streams</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number inter-Regular">1M <span>+</span></div>
+                    <div class="stat-label inter-Medium">Happy Subscribers</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number inter-Regular">50K <span>+</span></div>
+                    <div class="stat-label inter-Medium">Movies Available</div>
+                </div>
 
-        <div class="indicators" id="indicators"></div>
-    </div>
+
+            </div>
+
+            <div class="hero-section">
+                <h1 class="hero-title inter-Regular">
+                    Stream Your<br>Favorite Movies<br>Anytime, Anywhere!
+                </h1>
+                <p class="hero-description">
+                    Dive into a vast library of films from every genre, including the latest blockbusters, timeless
+                    classics, and hidden gems.
+                    Whether you're in the mood for action, romance, comedy, or drama — we have something for
+                    everyone.
+                </p>
+            </div>
+
+            <!-- Поисковая форма с выпадающими списками -->
+            <form action="/search" method="GET" class="search-panel">
+                <!-- Поисковое поле -->
+                <div class="search-input-wrapper">
+                    <img src="icons/search.svg" alt="search" class="search-icon">
+                    <input type="text" name="query" class="search-input inter-Regular" placeholder="Search"
+                        value="Search">
+                </div>
+
+                <!-- Выпадающий список: Genre -->
+                <div class="dropdown-wrapper dropdown-genre">
+                    <select name="genre" class="styled-select inter-Regular">
+                        <option value="">Genre</option>
+                        <option value="action">Action</option>
+                        <option value="adventure">Adventure</option>
+                        <option value="comedy">Comedy</option>
+                        <option value="drama">Drama</option>
+                        <option value="horror">Horror</option>
+                        <option value="romance">Romance</option>
+                        <option value="sci-fi">Sci-Fi</option>
+                        <option value="thriller">Thriller</option>
+                        <option value="western">Western</option>
+                    </select>
+                    <img class="dropdown-arrow" src="icons/searchArrow.svg" alt="searchArrow">
+                </div>
+
+                <div class="dropdown-wrapper dropdown-channel">
+                    <select name="channel" class="styled-select inter-Regular">
+                        <option value="">Channel</option>
+                        <option value="netflix">Netflix</option>
+                        <option value="prime">Amazon Prime</option>
+                        <option value="disney">Disney+</option>
+                        <option value="hbo">HBO Max</option>
+                        <option value="apple">Apple TV+</option>
+                        <option value="paramount">Paramount+</option>
+                        <option value="peacock">Peacock</option>
+                        <option value="hulu">Hulu</option>
+                    </select>
+                    <img class="dropdown-arrow" src="icons/searchArrow.svg" alt="searchArrow">
+                </div>
+
+                <div class="dropdown-wrapper dropdown-subtitle">
+                    <select name="subtitle" class="styled-select inter-Regular">
+                        <option value="">Subtitle</option>
+                        <option value="english">English</option>
+                        <option value="spanish">Spanish</option>
+                        <option value="french">French</option>
+                        <option value="german">German</option>
+                        <option value="italian">Italian</option>
+                        <option value="portuguese">Portuguese</option>
+                        <option value="russian">Russian</option>
+                        <option value="chinese">Chinese</option>
+                        <option value="japanese">Japanese</option>
+                        <option value="korean">Korean</option>
+                        <option value="arabic">Arabic</option>
+                        <option value="hindi">Hindi</option>
+                    </select>
+                    <img class="dropdown-arrow" src="icons/searchArrow.svg" alt="searchArrow">
+                </div>
+
+                <!-- Кнопка отправки -->
+                <button type="submit" class="search-now-btn inter-Bold btn">
+                    Search Now
+                </button>
+            </form>
+        </div>
 
 
 

@@ -131,16 +131,6 @@
             transform: rotate(180deg);
         }
 
-
-        .btn {
-            height: 52px;
-            border: none;
-            cursor: pointer;
-            font-size: 20px;
-            border-radius: 5px;
-        }
-
-
         .play {
             background-color: #EC3343;
             color: white;
@@ -270,42 +260,42 @@
         }
 
         /* ТВОИ КНОПКИ - ИСПРАВЛЕННЫЕ */
-/* ТВОИ КНОПКИ - ИСПРАВЛЕННЫЕ (без скачков) */
-.carousel-viewport {
-    position: relative;
-    width: 100%;
-    height: 600px;
-    overflow: visible !important;
-}
+        /* ТВОИ КНОПКИ - ИСПРАВЛЕННЫЕ (без скачков) */
+        .carousel-viewport {
+            position: relative;
+            width: 100%;
+            height: 600px;
+            overflow: visible !important;
+        }
 
-#carouselTrack {
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
+        #carouselTrack {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
 
-.slaid1 {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transition: all 0.55s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    border-radius: 20px;
-    overflow: hidden;
-    cursor: pointer;
-}
+        .slaid1 {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transition: all 0.55s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            border-radius: 20px;
+            overflow: hidden;
+            cursor: pointer;
+        }
 
-.slide-content {
-    position: relative;
-    z-index: 2;
-    pointer-events: auto;
-}
+        .slide-content {
+            position: relative;
+            z-index: 2;
+            pointer-events: auto;
+        }
 
-/* Затемнение для дальних слайдов */
-.slaid1.far-left,
-.slaid1.far-right {
-    filter: blur(2px);
-}
+        /* Затемнение для дальних слайдов */
+        .slaid1.far-left,
+        .slaid1.far-right {
+            filter: blur(2px);
+        }
 
-.warp-canvas {
-    border-radius: 20px;
-}
+        .warp-canvas {
+            border-radius: 20px;
+        }
