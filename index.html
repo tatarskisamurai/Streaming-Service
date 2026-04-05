@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="css/trending-movies-section.css">
     <link rel="stylesheet" href="css/movies-grid.css">
     <link rel="stylesheet" href="css/categories.css">
+    <link rel="stylesheet" href="css/pricing-section.css">
 </head>
 
 <body>
@@ -172,7 +173,7 @@
     <section class="trending-movies-section">
         <div class="container">
             <div class="trending-header">
-                <h2>Trending Movies in 2024</h2>
+                <h2>Trending Movies in 2026</h2>
 
                 <div class="trending-filters">
                     <button class="filter-btn active-btn">All</button>
@@ -288,57 +289,129 @@
     </section>
 
     <section class="categories-section">
-    <div class="container">
-        <h2 class="categories-title">Search by Categories</h2>
-        <p class="categories-description">Discover your next favorite film! Browse our extensive library by
-            categories:</p>
+        <div class="container">
+            <h2 class="categories-title">Search by Categories</h2>
+            <p class="categories-description">Discover your next favorite film! Browse our extensive library by
+                categories:</p>
 
-        <div class="categories-grid">
-            <a href="#" class="category-card">
-                <div class="icon-wrapper">
-                    <img src="icons/action.svg" alt="Action" width="24" height="24">
+            <div class="categories-grid">
+                <a href="#" class="category-card">
+                    <div class="icon-wrapper">
+                        <img src="icons/action.svg" alt="Action" width="24" height="24">
+                    </div>
+                    <span class="category-name">Action →</span>
+                </a>
+                <a href="#" class="category-card">
+                    <div class="icon-wrapper">
+                        <img src="icons/comedy-icon.svg" alt="Comedy" width="24" height="24">
+                    </div>
+                    <span class="category-name">Comedy →</span>
+                </a>
+                <a href="#" class="category-card">
+                    <div class="icon-wrapper">
+                        <img src="icons/drama-icon.svg" alt="Drama" width="24" height="24">
+                    </div>
+                    <span class="category-name">Drama →</span>
+                </a>
+                <a href="#" class="category-card">
+                    <div class="icon-wrapper">
+                        <img src="icons/horror-icon.svg" alt="Horror" width="24" height="24">
+                    </div>
+                    <span class="category-name">Horror →</span>
+                </a>
+                <a href="#" class="category-card">
+                    <div class="icon-wrapper">
+                        <img src="icons/scifi-icon.svg" alt="Sci-Fi" width="24" height="24">
+                    </div>
+                    <span class="category-name">Sci-Fi →</span>
+                </a>
+                <a href="#" class="category-card">
+                    <div class="icon-wrapper">
+                        <img src="icons/family-icon.svg" alt="Family" width="24" height="24">
+                    </div>
+                    <span class="category-name">Family →</span>
+                </a>
+                <a href="#" class="category-card">
+                    <div class="icon-wrapper">
+                        <img src="icons/documentaries-icon.svg" alt="Documentaries" width="24" height="24">
+                    </div>
+                    <span class="category-name">Documentaries →</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="pricing-section">
+
+        <div class="container">
+            <h2 class="pricing-title">Choose the perfect plan for you!</h2>
+            <p class="pricing-description">Choose the perfect plan for your movie-watching experience! We offer
+                flexible
+                subscription options to suit every viewer's needs:</p>
+
+            <div class="pricing-toggle-wrap">
+                <div class="pricing-toggle">
+                    <button class="toggle-btn active">Monthly</button>
+                    <button class="toggle-btn">Yearly</button>
                 </div>
-                <span class="category-name">Action →</span>
-            </a>
-            <a href="#" class="category-card">
-                <div class="icon-wrapper">
-                    <img src="icons/comedy-icon.svg" alt="Comedy" width="24" height="24">
-                </div>
-                <span class="category-name">Comedy →</span>
-            </a>
-            <a href="#" class="category-card">
-                <div class="icon-wrapper">
-                    <img src="icons/drama-icon.svg" alt="Drama" width="24" height="24">
-                </div>
-                <span class="category-name">Drama →</span>
-            </a>
-            <a href="#" class="category-card">
-                <div class="icon-wrapper">
-                    <img src="icons/horror-icon.svg" alt="Horror" width="24" height="24">
-                </div>
-                <span class="category-name">Horror →</span>
-            </a>
-            <a href="#" class="category-card">
-                <div class="icon-wrapper">
-                    <img src="icons/scifi-icon.svg" alt="Sci-Fi" width="24" height="24">
-                </div>
-                <span class="category-name">Sci-Fi →</span>
-            </a>
-            <a href="#" class="category-card">
-                <div class="icon-wrapper">
-                    <img src="icons/family-icon.svg" alt="Family" width="24" height="24">
-                </div>
-                <span class="category-name">Family →</span>
-            </a>
-            <a href="#" class="category-card">
-                <div class="icon-wrapper">
-                    <img src="icons/documentaries-icon.svg" alt="Documentaries" width="24" height="24">
-                </div>
-                <span class="category-name">Documentaries →</span>
-            </a>
+            </div>
+
+
+               <div class="pricing-grid">
+        <!-- Basic Plan -->
+        <div class="pricing-card">
+            <h3 class="plan-name">Basic Plan</h3>
+            <p class="plan-description">Access to standard definition streaming.</p>
+            <div class="plan-price">$9.99<span class="price-period">/month</span></div>
+            <ul class="plan-features">
+                <li>Unlimited access</li>
+                <li>1 Device</li>
+                <li>Perfect for casual viewers</li>
+                <li>Access to a selection of classic films and popular series.</li>
+            </ul>
+            <a href="#" class="plan-btn">Explore Now</a>
+            <a href="#" class="about-package">About Package</a>
+        </div>
+
+        <!-- Standard Plan -->
+        <div class="pricing-card">
+            <h3 class="plan-name">Standard Plan</h3>
+            <p class="plan-description">Enjoy HD streaming on two devices.</p>
+            <div class="plan-price">$14.99<span class="price-period">/month</span></div>
+            <ul class="plan-features">
+                <li>Unlimited access</li>
+                <li>2 Devices</li>
+                <li>Enjoy all the benefits of the Basic Plan</li>
+                <li>Access to exclusive content and new releases.</li>
+                <li>Offline Download</li>
+                <li>Ideal for families or couples</li>
+            </ul>
+            <a href="#" class="plan-btn">Explore Now</a>
+            <a href="#" class="about-package">About Package</a>
+        </div>
+
+        <!-- Premium Plan -->
+        <div class="pricing-card">
+            <h3 class="plan-name">Premium Plan</h3>
+            <p class="plan-description">Experience 4K streaming on four devices.</p>
+            <div class="plan-price">$19.99<span class="price-period">/month</span></div>
+            <ul class="plan-features">
+                <li>Unlimited access</li>
+                <li>4 Device</li>
+                <li>Enjoy all the benefits of the Standard Plan</li>
+                <li>Early access to new releases and original content.</li>
+                <li>Personalized recommendations</li>
+                <li>Priority customer support</li>
+            </ul>
+            <a href="#" class="plan-btn">Explore Now</a>
+            <a href="#" class="about-package">About Package</a>
         </div>
     </div>
-</section>
+        </div>
+        </div>
+    </section>
+
+    <section></section>
 
     <script src="js/slaider.js"></script>
     <script src="js/slider-script-marker.js"></script>
