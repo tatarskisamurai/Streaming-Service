@@ -1,0 +1,95 @@
+.movies-grid {
+    margin-top: 44px;
+    display: flex;
+    gap: 28px;
+}
+
+.card-image-wrapper {
+    width: 326px;
+    height: 398px;
+    border-radius: 10px;
+    background-color: #C4C4C4;
+    padding: 20px;
+}
+
+.card-content {
+    margin-top: 18px;
+}
+
+.movie-genre {
+    font-size: 20px;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: #EC3343;
+}
+
+.movie-title {
+    margin-top: 4px;
+    font-size: 26px;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    color: #ffffff;
+}
+
+.movie-meta {
+    margin-top: 4px;
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #ADADAD;
+}
+
+.card-footer {
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.price {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: #ffffff;
+    font-size: 34px;
+}
+
+.btn-pre-booking {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    background: none;
+    width: 131px;
+    height: 34px;
+    border: 2px solid#EC3343;
+    border-radius: 10px;
+    color: #FF2F2F;
+}
+
+.free-text {
+   color: #FF2F2F; 
+}
+
+.movie-card  .rating {
+    background-color: #ffffff;
+    margin: 0;
+    width: 77px;
+    height: 38px;
+    padding: 10px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.rating_number {
+    color: #2C2C2C;
+    font-size: 18px;
+}

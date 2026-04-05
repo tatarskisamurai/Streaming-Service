@@ -19,6 +19,8 @@
     <link rel="stylesheet" href="css/slaider.css">
     <link rel="stylesheet" href="css/stats.css">
     <link rel="stylesheet" href="css/search-panel.css">
+    <link rel="stylesheet" href="css/trending-movies-section.css">
+    <link rel="stylesheet" href="css/movies-grid.css">
 </head>
 
 <body>
@@ -165,6 +167,124 @@
 
 
     </header>
+
+    <section class="trending-movies-section">
+        <div class="container">
+            <div class="trending-header">
+                <h2 class="trending-title inter-Regular">Trending Movies in 2024</h2>
+
+                <div class="trending-filters">
+                    <button class="filter-btn active-btn">All</button>
+                    <button class="filter-btn">Action</button>
+                    <button class="filter-btn">Comedy</button>
+                    <button class="filter-btn">Drama</button>
+                    <button class="filter-btn">Horror</button>
+                    <button class="filter-btn">Sci-Fi</button>
+                    <button class="filter-btn">Family</button>
+                    <button class="filter-btn p">Documentaries</button>
+
+                    <a href="#" class="see-more-link inter-SemiBold">See More</a>
+                </div>
+
+
+
+            </div>
+            <div class="movies-grid">
+
+                <article class="movie-card">
+                    <div class="card-image-wrapper">
+                        <div class="card-image-placeholder"></div>
+                        <div class="rating">
+                            <img src="icons/starRating.svg" alt="starRating">
+                            <div class="rating_number inter-Medium">4.3</div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <span class="movie-genre">Horror</span>
+                        <h3 class="movie-title">Whispers in the Dark</h3>
+                        <div class="movie-meta">
+                            <span class="year">2023</span>
+                            <span class="separator">|</span>
+                            <span class="duration">1h 38m</span>
+                        </div>
+                        <div class="card-footer">
+                            <span class="price">$89.99</span>
+                            <button class="btn-pre-booking">PRE-BOOKING</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="movie-card">
+                    <div class="card-image-wrapper">
+                        <div class="card-image-placeholder"></div>
+                        <div class="rating">
+                            <img src="icons/starRating.svg" alt="starRating">
+                            <div class="rating_number inter-Medium">4.3</div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <span class="movie-genre">Sci-Fi</span>
+                        <h3 class="movie-title">Galactic Odyssey</h3>
+                        <div class="movie-meta">
+                            <span class="year">2024</span>
+                            <span class="separator">|</span>
+                            <span class="duration">1h 25m</span>
+                        </div>
+                        <div class="card-footer">
+                            <span class="price free-text">FREE</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="movie-card">
+                    <div class="card-image-wrapper">
+                        <div class="card-image-placeholder"></div>
+                        <div class="rating">
+                            <img src="icons/starRating.svg" alt="starRating">
+                            <div class="rating_number inter-Medium">4.3</div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <span class="movie-genre">Family</span>
+                        <h3 class="movie-title">The Magic of Friendship</h3>
+                        <div class="movie-meta">
+                            <span class="year">2024</span>
+                            <span class="separator">|</span>
+                            <span class="duration">2h 21m</span>
+                        </div>
+                        <div class="card-footer">
+                            <span class="price free-text">FREE</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="movie-card">
+                    <div class="card-image-wrapper">
+                        <div class="card-image-placeholder"></div>
+                        <div class="rating">
+                            <img src="icons/starRating.svg" alt="starRating">
+                            <div class="rating_number inter-Medium">4.3</div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <span class="movie-genre">Comedy</span>
+                        <h3 class="movie-title">Dinner Disaster</h3>
+                        <div class="movie-meta">
+                            <span class="year">2023</span>
+                            <span class="separator">|</span>
+                            <span class="duration">1h 30m</span>
+                        </div>
+                        <div class="card-footer">
+                            <span class="price">$49.99</span>
+                            <button class="btn-pre-booking">PRE-BOOKING</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+
+        </div>
+    </section>
 
     <script src="js/slaider.js"></script>
     <script src="js/slider-script-marker.js"></script>
