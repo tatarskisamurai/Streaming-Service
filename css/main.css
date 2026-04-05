@@ -1,6 +1,16 @@
 body {
   background-color: #000000;
   overflow-x: hidden;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  color: #ADADAD;
+}
+
+h2 {
+  font-size: 64px;
+  color: #EC3343;
+  font-weight: 400;
 }
 
 .container {
