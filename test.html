@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -44,7 +43,6 @@
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
-            position: relative;
         }
 
         .feature-card {
@@ -57,16 +55,17 @@
             flex-direction: column;
         }
 
-        /* Пунктирная линия между иконками - вплотную */
+        /* Пунктир с отступом 40px от иконки, до следующей иконки */
         .feature-card:not(:last-child) .feature-icon::after {
             content: '';
             position: absolute;
-            left: calc(100% + 5px);
+            left: calc(100% + 40px);
             top: 50%;
             transform: translateY(-50%);
-            width: 40px;
+            width: calc(100% - 80px);
             height: 2px;
-            background: repeating-linear-gradient(to right, #EC3343, #EC3343 6px, transparent 6px, transparent 12px);
+            background: repeating-linear-gradient(to right, #EC3343, #EC3343 8px, transparent 8px, transparent 16px);
+            z-index: 0;
         }
 
         .feature-icon {
@@ -136,8 +135,8 @@
 
         @media (max-width: 1024px) {
             .feature-card:not(:last-child) .feature-icon::after {
-                width: 30px;
-                left: calc(100% + 3px);
+                left: calc(100% + 20px);
+                width: calc(100% - 40px);
             }
         }
 
@@ -146,28 +145,87 @@
                 flex-direction: column;
                 gap: 40px;
             }
-
+            
             .feature-card:not(:last-child) .feature-icon::after {
                 display: none;
             }
-
+            
             .why-choose-us h2 {
                 font-size: 40px;
             }
-
+            
             .feature-title {
                 min-height: auto;
             }
-
+            
             .feature-description {
                 min-height: auto;
             }
         }
     </style>
 </head>
-
 <body>
-    
-</body>
+    <section class="why-choose-us">
+        <h2>Why Choose Us</h2>
+        <p class="pricing-description">Experience the Best in Movie Streaming with CineWave</p>
 
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <img src="icons/extensiveLibrary.svg" alt="Extensive Library">
+                </div>
+                <h3 class="feature-title">Extensive<br>Library</h3>
+                <p class="feature-description">Dive into our vast collection of thousands of movies spanning all genres.</p>
+                <a href="#" class="feature-link">
+                    Learn More
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <img src="icons/highQualityStreaming.svg" alt="High-Quality Streaming">
+                </div>
+                <h3 class="feature-title">High-Quality<br>Streaming</h3>
+                <p class="feature-description">Enjoy your favorite films in stunning HD quality with our seamless streaming service.</p>
+                <a href="#" class="feature-link">
+                    Learn More
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <img src="icons/affordablePlans.svg" alt="Affordable Plans">
+                </div>
+                <h3 class="feature-title">Affordable<br>Plans</h3>
+                <p class="feature-description">We believe that great entertainment should be accessible to everyone.</p>
+                <a href="#" class="feature-link">
+                    Learn More
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <img src="icons/customerSupport.svg" alt="24/7 Customer Support">
+                </div>
+                <h3 class="feature-title">24/7 Customer<br>Support</h3>
+                <p class="feature-description">Your satisfaction is our priority. Our dedicated customer support team is available 24/7.</p>
+                <a href="#" class="feature-link">
+                    Learn More
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+</body>
 </html>
