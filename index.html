@@ -22,6 +22,7 @@
 </head>
 
 <body>
+
     <header>
         <div class="container">
             <div class="navbar">
@@ -43,27 +44,28 @@
                     <button class="btn signup inter-Bold">Sign Up</button>
                 </div>
             </div>
+
+
         </div>
 
-        <div class="carousel_container">
-            <div class="carousel-viewport">
-                <div class="carousel" id="carouselTrack">
-                    <!-- Слайды будут динамически загружены -->
+        <div class="carousel" aria-label="Карусель слайдов">
+            <button class="nav prev" type="button" aria-label="Предыдущий слайд">&#10094;</button>
+
+            <div class="viewport">
+                <div class="track">
+                    <!-- Слайды будут сгенерированы через JS -->
                 </div>
             </div>
 
-            <div class="slaiderBtn prevButton" id="prevBtn">
-                <img src="icons/arrow.svg" alt="arrow">
-            </div>
-            <div class="slaiderBtn nextButton" id="nextBtn">
-                <img src="icons/arrow.svg" alt="arrow">
-            </div>
-
-            <div class="indicators" id="indicators"></div>
-
+            <button class="nav next" type="button" aria-label="Следующий слайд">
+                &#10095;
+            </button>
         </div>
 
         <div class="container">
+
+
+
             <div class="stats-grid">
                 <div class="stat-card">
                     <div class="stat-number inter-Regular">10K <span>+</span></div>
@@ -164,7 +166,8 @@
 
     </header>
 
-    <script type="module" src="js/slaider.js"></script>
+    <script src="js/slaider.js"></script>
+    <script src="js/slider-script-marker.js"></script>
 </body>
 
 </html>
