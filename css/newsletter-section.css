@@ -1,0 +1,89 @@
+       .newsletter-section {
+           width: 100%;
+           margin: 0 auto;
+           margin-top: 141px;
+           text-align: center;
+       }
+
+       .newsletter-section h2 {
+           font-size: 64px;
+           font-weight: 700;
+           color: #EC3343;
+           margin-bottom: 12px;
+       }
+
+       .newsletter-description {
+           font-size: 18px;
+           font-weight: 400;
+           color: #FFFFFF;
+           opacity: 0.8;
+           margin-bottom: 51px;
+       }
+
+       .newsletter-form {
+           display: flex;
+           justify-content: center;
+           gap: 20px;
+           flex-wrap: wrap;
+       }
+
+       .newsletter-input {
+           width: 342px;
+           height: 52px;
+           background-color: #272727;
+           border: none;
+           border-radius: 10px;
+           padding: 0 16px;
+           font-family: 'Inter', sans-serif;
+           font-size: 16px;
+           font-weight: 400;
+           color: #FFFFFF;
+       }
+
+       .newsletter-input::placeholder {
+           color: #858585;
+       }
+
+       .newsletter-input:focus {
+           outline: none;
+           border: 1px solid #EC3343;
+       }
+
+       .newsletter-btn {
+           width: 184px;
+           height: 52px;
+           background-color: #EC3343;
+           border: none;
+           border-radius: 10px;
+           font-family: 'Inter', sans-serif;
+           font-size: 16px;
+           font-weight: 700;
+           color: #FFFFFF;
+           cursor: pointer;
+           transition: background-color 0.3s ease;
+       }
+
+       .newsletter-btn:hover {
+           background-color: #c41e2e;
+       }
+
+       @media (max-width: 480px) {
+           .newsletter-section h2 {
+               font-size: 40px;
+           }
+
+           .newsletter-description {
+               font-size: 16px;
+               margin-bottom: 60px;
+           }
+
+           .newsletter-input {
+               width: 100%;
+               max-width: 342px;
+           }
+
+           .newsletter-btn {
+               width: 100%;
+               max-width: 184px;
+           }
+       }
